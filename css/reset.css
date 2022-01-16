@@ -1,0 +1,105 @@
+/* Reset de css Enero 2022 Manuel Rangel */
+
+/* ejemplo de comentarios  */
+/*......................................... */
+
+/* 
+  Reseteo de margenes y relleno de las etiquetas y el modelo de caja
+*/
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%; /* 10px = 1rem */
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+/* fuente para el body */
+body {
+    font-size: 1.6rem;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* 
+  Reseteo para las listas
+*/
+ul, ol, menu {
+    list-style: none;
+}
+
+/* 
+    Reseteo para los enlaces
+*/
+a {
+    display: block;    
+}
+
+p a {
+    display: inline;
+}
+
+/* 
+    Reseteo para las img
+*/
+img, picture, video, iframe, figure {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* vertical-align: top; */
+}
+
+/* 
+    Reseteo de formularios
+*/
+form, input, textarea, select, button, label {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    color: inherit;
+    appearance: none;
+}
+
+/* 
+    Tablas
+*/
+table, tr, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 
+    Problemas con SVG
+*/
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+/* 
+    Tipografia
+*/
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Pseudo Elementos con quotes */
+blockquote::before, blockquote::after, q::before, q::after {
+    content: "";
+    content: none;
+
+}
