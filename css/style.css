@@ -53,6 +53,9 @@ body {
   background-color: var(--Bright-Blue);
   color: var(--Light-Grayish-Blue);
 }
+.btn-blue:hover {
+  background-color: hsla(224, 93%, 58%, 0.789);
+}
 .form-white{
   background-color: #fff;
 }
@@ -99,7 +102,14 @@ body {
   flex-direction: column;
   gap: 1.6rem;
 }
+.form > *[required]:valid {
+  border: thin solid greenyellow;
+}
+.form > *[required]:invalid {
+  border: thin solid red;
+}
 .input-t {
+  outline: none;
   padding: 1rem 2rem;
   border: 1px solid var(--Very-Dark-Blue);
 }
@@ -146,6 +156,10 @@ body {
   gap: 0.8rem;
   text-decoration: underline;
   color: var(--Moderate-Cyan);
+  transition: all 1s;
+}
+.enlace:hover {
+  color: hsl(170, 93%, 66%);
 }
 .card {
   align-self: center;
@@ -153,7 +167,12 @@ body {
   max-width: 360px;
   background-color: #fff;
   margin-top: 1.6rem;
-  padding: 2rem;
+  padding: 2rem 3.8rem;
+  box-shadow: -1px 1px 16px 0px rgba(191,191,191,0.75);
+}
+.quotes {
+  width: 2rem;
+  margin-bottom: 1rem;
 }
 .card p{
   font-size: 1.3rem;
@@ -201,6 +220,12 @@ body {
   gap: 2rem;
   flex-direction: column;
 }
+.form-grid-2 > *[required]:valid {
+  border: thin solid greenyellow;
+}
+.form-grid-2 > *[required]:invalid {
+  border: thin solid red;
+}
 
 /*......................................... footer */
 .footer {
@@ -229,9 +254,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: flex-start;
 }
-.list-f li {
+.list-f li a {
   color: #fff;
+  transition: color 1s;
+}
+.list-f li a:hover{
+  color: var(--Bright-Blue);
 }
 .social-media {
   display: flex;
@@ -248,6 +278,11 @@ body {
   border-radius: 100%;
   font-size: 2.3rem;
   color: #fff;
+  transition: all 1s;
+}
+.social-media a:hover {
+  color: var(--Bright-Blue);
+  border-color: var(--Bright-Blue);
 }
 
 /*......................................... MEDIAQUERYS */
